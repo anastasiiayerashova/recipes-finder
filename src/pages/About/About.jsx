@@ -18,7 +18,8 @@ export default function About() {
             celebrates the diversity of global cuisines while keeping simplicity
             at its heart. Whether you're a beginner or a seasoned cook,
             Radiant Recipes is here to inspire you with flavors that shine.
-            Join us as we celebrate the art of cooking and the magic it brings to our lives.</p>
+                Join us as we celebrate the art of cooking and the magic it brings to our lives.</p>
+              <img src='/src/aboutImg.jpeg'/>
         </div>
     )
 }
