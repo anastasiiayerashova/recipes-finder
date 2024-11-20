@@ -23,7 +23,7 @@ export default function Recipes() {
     }
 
     return (
-        <> 
+        <div className={s.container}> 
         <div>
             <h1>Recipes</h1>
             <p>Dive into the vibrant world of recipes with Radiant Recipes!
@@ -43,7 +43,7 @@ export default function Recipes() {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
 
     )
 }

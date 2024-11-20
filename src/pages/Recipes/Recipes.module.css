@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  & li {
+    list-style-type: none;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  & a {
+    text-decoration: none;
+  }
+}
+
+.img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
