@@ -13,7 +13,7 @@ export default function Header() {
             <header className={s.header}>
             <p className={s.logo}>
                 <span>
-                    <MdOutlineFoodBank size={44}/>
+                    <MdOutlineFoodBank size={44} color='#551a8b'/>
                 </span>
                 {' '} RadiantRecipes
             </p>

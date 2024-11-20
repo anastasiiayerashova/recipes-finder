@@ -4,3 +4,7 @@
   max-width: 800px;
   justify-content: center;
 }
+
+p {
+  font-size: 25px;
+}

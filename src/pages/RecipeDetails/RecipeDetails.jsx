@@ -3,7 +3,11 @@ import { getRecipeById } from '../../api'
 import { useEffect, useState } from 'react'
 import { Outlet, useParams } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
+import clsx from 'clsx'
 
+const buildLinkClass = ({ isActive }) => {
+  return clsx(s.link, isActive && s.active);
+};
 
 export default function RecipeDetails() {
     const [data, setData] = useState(null)
@@ -23,9 +27,10 @@ export default function RecipeDetails() {
 
     return (
         <div>
-            <img src={data.image} alt={data.name} />
+            <div className={s.firstDiv}>  
+                <img src={data.image} alt={data.name} />
+                <div className={s.secDiv}> 
             <h2 className={s.name}>{data.name}</h2>
-            <div className={s.container}>
             <div className={s.ingredients}>
                 <h3>Ingredients:</h3>
                 <ul>
@@ -35,7 +40,11 @@ export default function RecipeDetails() {
                         </li>
                     ))}
                 </ul>
-            </div>
+                    </div>
+                     </div>
+                </div>
+            <div className={s.container}>
+            
             <div className={s.instructions}>
                 <h3>Instructions:</h3>
                 <p>
@@ -43,11 +52,11 @@ export default function RecipeDetails() {
                 </p>
                 </div>
                  <nav className={s.nav}>
-                    <NavLink to='servings'>Servings</NavLink>
-                    <NavLink to='difficulty'>Difficulty</NavLink>
-                <NavLink to='cuisine'>Cuisine</NavLink>
-                <NavLink to='minutes'>Cooking time</NavLink>
-                <NavLink to='calories'>Calories per serving</NavLink>
+                    <NavLink to='servings' className={buildLinkClass}>Servings</NavLink>
+                    <NavLink to='difficulty' className={buildLinkClass}>Difficulty</NavLink>
+                <NavLink to='cuisine' className={buildLinkClass}>Cuisine</NavLink>
+                <NavLink to='minutes' className={buildLinkClass}>Cooking time</NavLink>
+                <NavLink to='calories' className={buildLinkClass}>Calories per serving</NavLink>
                 </nav>
                 <div className={s.outlet}> 
                     <Outlet context={data} />

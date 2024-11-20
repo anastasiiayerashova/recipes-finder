@@ -1,5 +1,16 @@
+.firstDiv {
+  display: flex;
+  gap: 40px;
+}
+
+.secDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 img {
-  height: 400px;
+  height: 500px;
   border-radius: 4px;
   object-fit: contain;
   display: flex;
@@ -7,7 +18,7 @@ img {
 
 .name {
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .ingredients {
@@ -16,27 +27,28 @@ img {
   align-items: flex-start;
   & h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 24px;
   }
   & ul {
     padding-left: 16px;
   }
   & li {
     text-align: left;
-    font-size: 18px;
-  }
-}
-
-.instructions {
-  font-size: 18px;
-  & h3 {
-    margin-top: 0;
-    margin-bottom: 12px;
     font-size: 20px;
   }
 }
 
+.instructions {
+  font-size: 20px;
+  & h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+}
+
 .container {
+  margin-top: 40px;
   display: flex;
   text-align: left;
   flex-direction: column;
@@ -64,4 +76,16 @@ img {
 
 .nav {
   margin-top: 20px;
+}
+
+.link {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.active {
+  color: white;
+  background-color: #551a8b;
 }
