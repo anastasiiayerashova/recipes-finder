@@ -16,7 +16,7 @@ export default function Home() {
                 we've got everything you need to make your culinary journey unforgettable.
                 Discover inspiring recipes, learn new cooking techniques, and transform
                 your everyday meals into extraordinary experiences. Let’s cook something amazing together!</p>
-            <img src='/public/homeImg.jpg' className={s.img} />
+            <img src='/homeImg.jpg' className={s.img} />
         </div>
     )
 }
