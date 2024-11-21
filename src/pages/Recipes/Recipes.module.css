@@ -10,7 +10,8 @@
   gap: 16px;
   & li {
     list-style-type: none;
-    border: 1px solid black;
+    border: 1px solid #551a8b;
+    border-radius: 8px;
     cursor: pointer;
   }
   & a {
@@ -23,4 +24,12 @@
   object-fit: contain;
   width: 100%;
   height: auto;
+}
+
+.text {
+  margin-bottom: 30px;
+}
+
+.recipeName {
+  font-size: 20px;
 }

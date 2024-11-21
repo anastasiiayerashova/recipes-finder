@@ -4,14 +4,19 @@ import { useEffect, useState } from 'react'
 import { Outlet, useParams } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import clsx from 'clsx'
+import BackLink from '../../components/BackLink/BackLink'
+import { useLocation } from 'react-router-dom'
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(s.link, isActive && s.active);
 };
 
 export default function RecipeDetails() {
+    const location = useLocation()
+    const backLinkHref = location.state ?? '/recipes'
     const [data, setData] = useState(null)
     const { recipeId } = useParams()
+    
     
     useEffect(() => {
         const handleSearch = async () => {
@@ -27,7 +32,9 @@ export default function RecipeDetails() {
 
     return (
         <div>
-            <div className={s.firstDiv}>  
+            <BackLink to={backLinkHref}>Back to recipes</BackLink>
+            <div className={s.firstDiv}> 
+                
                 <img src={data.image} alt={data.name} />
                 <div className={s.secDiv}> 
             <h2 className={s.name}>{data.name}</h2>

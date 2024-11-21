@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import './App.css'
 import Header from './Header/Header'
+import NotFound from '../pages/NotFound/NotFound'
 import { Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home/Home'
 import About from '../pages/About/About'
 import Recipes from '../pages/Recipes/Recipes'
-import NotFound from '../pages/NotFound/NotFound'
 import RecipeDetails from '../pages/RecipeDetails/RecipeDetails'
 import RecipesSection from '../pages/RecipeDetails/RecipesSection'
 
@@ -26,5 +25,3 @@ export default function App() {
     </div>
   )
 }
-
-
