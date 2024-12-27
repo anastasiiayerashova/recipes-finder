@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import clsx from 'clsx'
 import BackLink from '../../components/BackLink/BackLink'
 import { useLocation } from 'react-router-dom'
+import { AnimatedLayout } from '../../components/AnimatedLayout'
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(s.link, isActive && s.active);
@@ -31,6 +32,7 @@ export default function RecipeDetails() {
     }
 
     return (
+    <AnimatedLayout>
         <div>
             <BackLink to={backLinkHref}>Back to recipes</BackLink>
             <div className={s.firstDiv}> 
@@ -70,6 +72,7 @@ export default function RecipeDetails() {
                      </div>
             </div>
            
-        </div>
+            </div>
+    </AnimatedLayout>
     )
 }
