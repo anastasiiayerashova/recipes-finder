@@ -70,7 +70,6 @@ export default function Recipes() {
         <div>
             <motion.h1 custom={1} variants={textAnimation} initial='hidden' animate='visible'>Recipes</motion.h1>
                 <motion.p custom={2} variants={textAnimation} initial='hidden' animate='visible' className={s.text}>Dive into the vibrant world of recipes with Radiant Recipes!
-                From comforting classics to modern creations, our collection is designed to inspire and satisfy.
                 Each recipe is crafted with care, featuring detailed instructions,
                 helpful tips, and beautiful imagery to guide you through every step.
                 Whether you’re exploring new cuisines or perfecting your favorites,

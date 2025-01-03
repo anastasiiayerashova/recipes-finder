@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 #root {
-  max-width: 1280px;
+  max-width: 375px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 20px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
 }
@@ -15,7 +15,18 @@
 }
 
 .mainDiv {
-  min-width: 960px;
+  min-width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  /* padding: 0 16px; */
+}
+
+@media screen and (min-width: 768px) {
+  #root {
+    max-width: 1280px;
+    padding: 2rem;
+  }
+
+  .mainDiv {
+    min-width: 960px;
+  }
 }

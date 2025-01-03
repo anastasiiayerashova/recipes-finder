@@ -7,7 +7,7 @@
 }
 
 .input {
-  padding: 8px 32px 8px 8px;
+  padding: 4px 10px;
   border-radius: 8px;
   font: inherit;
   border: 1px solid #551a8b;
@@ -20,4 +20,10 @@
   position: absolute;
   right: 6px;
   color: #551a8b;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    padding: 8px 32px 8px 8px;
+  }
 }

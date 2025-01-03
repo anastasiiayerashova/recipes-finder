@@ -9,11 +9,10 @@ const buildLinkClass = ({ isActive }) => {
 
 export default function Header() {
     return (
-        
             <header className={s.header}>
             <p className={s.logo}>
                 <span>
-                    <MdOutlineFoodBank size={44} color='#551a8b'/>
+                    <MdOutlineFoodBank color='#551a8b' className={s.titleIcon} />
                 </span>
                 {' '} RadiantRecipes
             </p>

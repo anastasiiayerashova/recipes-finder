@@ -10,7 +10,17 @@ p {
 }
 
 .img {
-  margin: 40px auto 0 auto;
+  margin: 25px auto 0 auto;
   display: block;
   border-radius: 4px;
+  max-width: 375px;
+  height: unset;
+}
+
+@media screen and (min-width: 768px) {
+  .img {
+    max-width: unset;
+    height: 500px;
+    margin: 40px auto 0 auto;
+  }
 }

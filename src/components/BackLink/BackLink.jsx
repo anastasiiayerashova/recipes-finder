@@ -5,7 +5,7 @@ import { HiArrowLeft } from 'react-icons/hi';
 export default function BackLink({to, children}) {
     return ( <div className={s.arrowDiv}> 
         <Link to={to} className={s.link}>
-            <HiArrowLeft size={24} />
+            <HiArrowLeft className={s.icon}/>
             {children}
         </Link>
          </div>

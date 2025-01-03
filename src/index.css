@@ -22,8 +22,10 @@ body {
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 25px;
   line-height: 1.1;
+  margin: 25px auto;
+  color: #551a8b;
 }
 
 button {
@@ -50,8 +52,20 @@ button {
 
 p {
   margin: 0;
+  font-size: 12px;
 }
 
 a {
   color: #551a8b;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.8em;
+    margin: 35px auto;
+  }
+
+  p {
+    font-size: 25px;
+  }
 }
