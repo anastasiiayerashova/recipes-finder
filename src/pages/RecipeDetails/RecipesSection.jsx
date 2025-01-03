@@ -1,6 +1,4 @@
 import { useParams, useOutletContext } from "react-router-dom";
-import { getRecipeById } from "../../api";
-import { useEffect, useState } from "react";
 
 export default function RecipesSection() {
     const data = useOutletContext()

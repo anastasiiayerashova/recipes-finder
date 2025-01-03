@@ -14,12 +14,10 @@
     border: 1px solid #551a8b;
     border-radius: 8px;
     cursor: pointer;
-    /* max-width: 140px; */
   }
   & a {
     text-decoration: none;
   }
-  /* padding-left: 0; */
 }
 
 .img {

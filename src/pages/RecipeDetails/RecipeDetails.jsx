@@ -18,7 +18,6 @@ export default function RecipeDetails() {
     const [data, setData] = useState(null)
     const { recipeId } = useParams()
     
-    
     useEffect(() => {
         const handleSearch = async () => {
             const recipe = await getRecipeById(recipeId)
@@ -63,15 +62,14 @@ export default function RecipeDetails() {
                  <nav className={s.nav}>
                     <NavLink to='servings' className={buildLinkClass}>Servings</NavLink>
                     <NavLink to='difficulty' className={buildLinkClass}>Difficulty</NavLink>
-                <NavLink to='cuisine' className={buildLinkClass}>Cuisine</NavLink>
-                <NavLink to='minutes' className={buildLinkClass}>Cooking time</NavLink>
-                <NavLink to='calories' className={buildLinkClass}>Calories per serving</NavLink>
+                    <NavLink to='cuisine' className={buildLinkClass}>Cuisine</NavLink>
+                    <NavLink to='minutes' className={buildLinkClass}>Cooking time</NavLink>
+                    <NavLink to='calories' className={buildLinkClass}>Calories per serving</NavLink>
                 </nav>
                 <div className={s.outlet}> 
                     <Outlet context={data} />
-                     </div>
+                </div>
             </div>
-           
             </div>
     </AnimatedLayout>
     )

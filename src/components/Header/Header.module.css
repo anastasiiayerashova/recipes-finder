@@ -1,8 +1,6 @@
 .header {
   display: flex;
   align-items: center;
-  /* justify-content: space-between;
-  gap: 52px; */
   padding: 8px 0;
   border-bottom: 1px solid #551a8b;
   gap: 25px;
@@ -18,17 +16,14 @@
   margin: 0;
   display: flex;
   align-items: center;
-  /* font-size: 29px; */
   font-size: 14px;
 }
 
 .link {
-  /* padding: 8px 16px; */
   padding: 4px 8px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  /* font-size: 20px; */
   font-size: 12px;
 }
 
