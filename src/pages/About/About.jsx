@@ -31,9 +31,7 @@ export default function About() {
             that are easy to follow, delicious, and bursting with flavor.
             Created by food enthusiasts and tested for perfection, our collection
             celebrates the diversity of global cuisines while keeping simplicity
-            at its heart. Whether you're a beginner or a seasoned cook,
-            Radiant Recipes is here to inspire you with flavors that shine.
-                Join us as we celebrate the art of cooking and the magic it brings to our lives.</motion.p>
+            at its heart</motion.p>
             <img src='/aboutImg.jpeg' className={s.img} />
             </div>
     </AnimatedLayout>
